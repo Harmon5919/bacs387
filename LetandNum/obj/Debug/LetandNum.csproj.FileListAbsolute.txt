@@ -4,3 +4,9 @@ C:\Users\harm0354\Documents\BACS387\LetandNum\bin\Debug\LetandNum.pdb
 C:\Users\harm0354\Documents\BACS387\LetandNum\obj\Debug\LetandNum.csprojAssemblyReference.cache
 C:\Users\harm0354\Documents\BACS387\LetandNum\obj\Debug\LetandNum.exe
 C:\Users\harm0354\Documents\BACS387\LetandNum\obj\Debug\LetandNum.pdb
+C:\Users\hanna\Documents\UNCO\bacs387\LetandNum\bin\Debug\LetandNum.exe.config
+C:\Users\hanna\Documents\UNCO\bacs387\LetandNum\bin\Debug\LetandNum.exe
+C:\Users\hanna\Documents\UNCO\bacs387\LetandNum\bin\Debug\LetandNum.pdb
+C:\Users\hanna\Documents\UNCO\bacs387\LetandNum\obj\Debug\LetandNum.csprojAssemblyReference.cache
+C:\Users\hanna\Documents\UNCO\bacs387\LetandNum\obj\Debug\LetandNum.exe
+C:\Users\hanna\Documents\UNCO\bacs387\LetandNum\obj\Debug\LetandNum.pdb

@@ -10,36 +10,129 @@ namespace LetandNum
     {
         static void Main(string[] args)
         {
- 
-            List<string> let = new List<string>();
-            let.Add("A"); let.Add("B"); let.Add("C"); let.Add("D"); let.Add("E"); let.Add("F"); let.Add("G"); let.Add("H"); let.Add("I"); let.Add("J"); let.Add("K");
-            let.Add("L"); let.Add("M");,  let.Add("N");, "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"
-
-            List<int> num = new List<int>();
-            num.Add(0); num.Add(1); num.Add(1); num.Add(2); num.Add(3); num.Add(5); num.Add(8); num.Add(13); num.Add(21); num.Add(34); num.Add(55); num.Add(89);
-            num.Add(144); num.Add(233); num.Add(377); num.Add(610); num.Add(987); num.Add(1597); num.Add(2584); num.Add(4181); num.Add(6765); num.Add(10946);
-            num.Add(17711); num.Add(28657); num.Add(46368); num.Add(75025); num.Add(121393);
-                    {
-                        0, 
             Console.WriteLine("Please enter any word");
-            string match = Console.ReadLine();
-            int length = match.Length;
-            int added = 0;
-            int cross = 0;
-            int next = 0;
- 
+            string input = Console.ReadLine().ToLower();
+            List<char> let = new List<char>();
+            foreach (char n in input)
+            {
+                let.Add(n);
+            }
+            
+            int length = input.Length;
+            int fib = 0;
+            int add = 0;
+
             for (int z = 0; z < length; z++)
             {
-                for (int x = 0; x < let.Count(); x++)
+                char match = let.ElementAt(z);
+                if (match == 'a')
                 {
-                    if (match.ToUpper() == let.ElementAt<string>(x))
-                    {
-                        cross = num.ElementAt<int>(x);
-                    }
+                    fib = 0;
                 }
-                added += cross;
+                else if (match == 'b')
+                {
+                    fib = 1;
+                }
+                else if (match == 'c')
+                {
+                    fib = 1;
+                }
+                else if (match == 'd')
+                {
+
+                    fib = 2;
+                }
+                else if (match == 'e')
+                {
+                    fib = 3;
+                }
+                else if (match == 'f')
+                {
+                    fib = 5;
+                }
+                else if (match == 'g')
+                {
+                    fib = 8;
+                }
+                else if (match == 'h')
+                {
+                    fib = 13;
+                }
+                else if (match == 'i')
+                {
+                    fib = 21;
+                }
+                else if (match == 'j')
+                {
+                    fib = 34;
+                }
+                else if (match == 'k')
+                {
+                    fib = 55;
+                }
+                else if (match == 'l')
+                {
+                    fib = 89;
+                }
+                else if (match == 'm')
+                {
+                    fib = 144;
+                }
+                else if (match == 'n')
+                {
+                    fib = 233;
+                }
+                else if (match == 'o')
+                {
+                    fib = 377;
+                }
+                else if (match == 'p')
+                {
+                    fib = 610;
+                }
+                else if (match == 'q')
+                {
+                    fib = 987;
+                }
+                else if (match == 'r')
+                {
+                    fib = 1597;
+                }
+                else if (match == 's')
+                {
+                    fib = 2584;
+                }
+                else if (match == 't')
+                {
+                    fib = 4181;
+                }
+                else if (match == 'u')
+                {
+                    fib = 6765;
+                }
+                else if (match == 'v')
+                {
+                    fib = 10946;
+                }
+                else if (match == 'w')
+                {
+                    fib = 17711;
+                }
+                else if (match == 'x')
+                {
+                    fib = 28657;
+                }
+                else if (match == 'y')
+                {
+                    fib = 46368;
+                }
+                else if (match == 'z')
+                {
+                    fib = 75025;
+                }
+                add += fib;
             }
-            Console.WriteLine("The fibonacci value of the word " + match + " is " + added);
+            Console.WriteLine("The fibonacci value of the word " + input + " is " + add);
             Console.ReadKey();
         }
     }
