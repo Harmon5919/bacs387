@@ -1,0 +1,6 @@
+C:\Users\harm0354\Documents\BACS387\ListPrint\bin\Debug\ListPrint.exe.config
+C:\Users\harm0354\Documents\BACS387\ListPrint\bin\Debug\ListPrint.exe
+C:\Users\harm0354\Documents\BACS387\ListPrint\bin\Debug\ListPrint.pdb
+C:\Users\harm0354\Documents\BACS387\ListPrint\obj\Debug\ListPrint.csprojAssemblyReference.cache
+C:\Users\harm0354\Documents\BACS387\ListPrint\obj\Debug\ListPrint.exe
+C:\Users\harm0354\Documents\BACS387\ListPrint\obj\Debug\ListPrint.pdb

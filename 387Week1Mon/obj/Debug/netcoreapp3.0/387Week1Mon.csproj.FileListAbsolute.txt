@@ -1,0 +1,11 @@
+C:\Users\harm0354\Documents\BACS387\387Week1Mon\387Week1Mon\bin\Debug\netcoreapp3.0\387Week1Mon.exe
+C:\Users\harm0354\Documents\BACS387\387Week1Mon\387Week1Mon\bin\Debug\netcoreapp3.0\387Week1Mon.deps.json
+C:\Users\harm0354\Documents\BACS387\387Week1Mon\387Week1Mon\bin\Debug\netcoreapp3.0\387Week1Mon.runtimeconfig.json
+C:\Users\harm0354\Documents\BACS387\387Week1Mon\387Week1Mon\bin\Debug\netcoreapp3.0\387Week1Mon.runtimeconfig.dev.json
+C:\Users\harm0354\Documents\BACS387\387Week1Mon\387Week1Mon\bin\Debug\netcoreapp3.0\387Week1Mon.dll
+C:\Users\harm0354\Documents\BACS387\387Week1Mon\387Week1Mon\bin\Debug\netcoreapp3.0\387Week1Mon.pdb
+C:\Users\harm0354\Documents\BACS387\387Week1Mon\387Week1Mon\obj\Debug\netcoreapp3.0\387Week1Mon.csprojAssemblyReference.cache
+C:\Users\harm0354\Documents\BACS387\387Week1Mon\387Week1Mon\obj\Debug\netcoreapp3.0\387Week1Mon.AssemblyInfoInputs.cache
+C:\Users\harm0354\Documents\BACS387\387Week1Mon\387Week1Mon\obj\Debug\netcoreapp3.0\387Week1Mon.AssemblyInfo.cs
+C:\Users\harm0354\Documents\BACS387\387Week1Mon\387Week1Mon\obj\Debug\netcoreapp3.0\387Week1Mon.dll
+C:\Users\harm0354\Documents\BACS387\387Week1Mon\387Week1Mon\obj\Debug\netcoreapp3.0\387Week1Mon.pdb

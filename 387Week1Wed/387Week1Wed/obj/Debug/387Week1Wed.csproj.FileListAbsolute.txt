@@ -1,0 +1,6 @@
+C:\Users\harm0354\Documents\BACS387\387Week1Wed\387Week1Wed\obj\Debug\387Week1Wed.csprojAssemblyReference.cache
+C:\Users\harm0354\Documents\BACS387\387Week1Wed\387Week1Wed\bin\Debug\387Week1Wed.exe.config
+C:\Users\harm0354\Documents\BACS387\387Week1Wed\387Week1Wed\bin\Debug\387Week1Wed.exe
+C:\Users\harm0354\Documents\BACS387\387Week1Wed\387Week1Wed\bin\Debug\387Week1Wed.pdb
+C:\Users\harm0354\Documents\BACS387\387Week1Wed\387Week1Wed\obj\Debug\387Week1Wed.exe
+C:\Users\harm0354\Documents\BACS387\387Week1Wed\387Week1Wed\obj\Debug\387Week1Wed.pdb

@@ -1,0 +1,6 @@
+C:\Users\harm0354\Documents\BACS387\ConsoleMenu\bin\Debug\ConsoleMenu.exe.config
+C:\Users\harm0354\Documents\BACS387\ConsoleMenu\bin\Debug\ConsoleMenu.exe
+C:\Users\harm0354\Documents\BACS387\ConsoleMenu\bin\Debug\ConsoleMenu.pdb
+C:\Users\harm0354\Documents\BACS387\ConsoleMenu\obj\Debug\ConsoleMenu.csprojAssemblyReference.cache
+C:\Users\harm0354\Documents\BACS387\ConsoleMenu\obj\Debug\ConsoleMenu.exe
+C:\Users\harm0354\Documents\BACS387\ConsoleMenu\obj\Debug\ConsoleMenu.pdb
