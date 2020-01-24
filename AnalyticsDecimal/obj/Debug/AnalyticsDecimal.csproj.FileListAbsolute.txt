@@ -1,0 +1,6 @@
+C:\Users\hanna\Documents\UNCO\BACS387\AnalyticsDecimal\bin\Debug\AnalyticsDecimal.exe.config
+C:\Users\hanna\Documents\UNCO\BACS387\AnalyticsDecimal\bin\Debug\AnalyticsDecimal.exe
+C:\Users\hanna\Documents\UNCO\BACS387\AnalyticsDecimal\bin\Debug\AnalyticsDecimal.pdb
+C:\Users\hanna\Documents\UNCO\BACS387\AnalyticsDecimal\obj\Debug\AnalyticsDecimal.csprojAssemblyReference.cache
+C:\Users\hanna\Documents\UNCO\BACS387\AnalyticsDecimal\obj\Debug\AnalyticsDecimal.exe
+C:\Users\hanna\Documents\UNCO\BACS387\AnalyticsDecimal\obj\Debug\AnalyticsDecimal.pdb
