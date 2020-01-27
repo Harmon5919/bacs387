@@ -29,6 +29,7 @@ namespace GradesManager1
                     decimal grade = decimal.Parse(Console.ReadLine());
                     int count = 0;
                     average += grade;
+                    count++;
                     while (selection == true)
                     {
  
@@ -36,6 +37,7 @@ namespace GradesManager1
                         string response = Console.ReadLine();
                         if (response.ToLower() == "yes")
                         {
+                            Console.WriteLine("Please enter the next grade.");
                             grade = decimal.Parse(Console.ReadLine());
                             average += grade;
                             count++;
@@ -50,24 +52,31 @@ namespace GradesManager1
                 }
                 else if (select =="2") //if user selects option 2. Display Grade Average
                 {
-                    //displays contents of Students list
-                    Console.WriteLine("The current students are:"); 
-                    for (int i =0; i < Students.Count; i++)
+                    if (Students.Count == 0)
                     {
-                        Console.WriteLine(Students.ElementAt(i));
+                        Console.WriteLine("There are no students in this list.");
                     }
-                    Console.WriteLine("Please type the name of a student above to calculate their average grade.");
-                    string match = Console.ReadLine(); //user types name of any student displayed above
-                    for (int i = 0; i < Students.Count; i++)
+                    else
                     {
-                        if (match == Students.ElementAt(i))
+                        //displays contents of Students list
+                        Console.WriteLine("The current students are:");
+                        for (int i = 0; i < Students.Count; i++)
                         {
-                            Console.WriteLine(Students.ElementAt(i) + "'s average grade is " + Grades.ElementAt(i));
-                            Console.ReadKey();
+                            Console.WriteLine(Students.ElementAt(i));
                         }
-                        else
+                        Console.WriteLine("Please type the name of a student above to calculate their average grade.");
+                        string match = Console.ReadLine(); //user types name of any student displayed above
+                        for (int i = 0; i < Students.Count; i++)
                         {
-                            Console.WriteLine(match + "was not found. Please enter a name from the list above"); //if typed name does not match name in list
+                            if (match == Students.ElementAt(i))
+                            {
+                                Console.WriteLine(Students.ElementAt(i) + "'s average grade is " + Grades.ElementAt(i));
+                                Console.ReadKey();
+                            }
+                            else
+                            {
+                                Console.WriteLine(match + "was not found. Please enter a name from the list above"); //if typed name does not match name in list
+                            }
                         }
                     }
                 }
