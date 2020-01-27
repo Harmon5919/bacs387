@@ -1,6 +1,0 @@
-C:\Users\harm0354\Documents\BACS387\GradesManager1\obj\Debug\GradesManager1.csprojAssemblyReference.cache
-C:\Users\harm0354\Documents\BACS387\GradesManager1\bin\Debug\GradesManager1.exe.config
-C:\Users\harm0354\Documents\BACS387\GradesManager1\bin\Debug\GradesManager1.exe
-C:\Users\harm0354\Documents\BACS387\GradesManager1\bin\Debug\GradesManager1.pdb
-C:\Users\harm0354\Documents\BACS387\GradesManager1\obj\Debug\GradesManager1.exe
-C:\Users\harm0354\Documents\BACS387\GradesManager1\obj\Debug\GradesManager1.pdb
