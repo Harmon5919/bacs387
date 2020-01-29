@@ -1,0 +1,6 @@
+C:\Users\harm0354\Documents\GitHub\bacs387\GradeManager2\bin\Debug\GradeManager2.exe.config
+C:\Users\harm0354\Documents\GitHub\bacs387\GradeManager2\bin\Debug\GradeManager2.exe
+C:\Users\harm0354\Documents\GitHub\bacs387\GradeManager2\bin\Debug\GradeManager2.pdb
+C:\Users\harm0354\Documents\GitHub\bacs387\GradeManager2\obj\Debug\GradeManager2.csprojAssemblyReference.cache
+C:\Users\harm0354\Documents\GitHub\bacs387\GradeManager2\obj\Debug\GradeManager2.exe
+C:\Users\harm0354\Documents\GitHub\bacs387\GradeManager2\obj\Debug\GradeManager2.pdb
