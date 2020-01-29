@@ -13,6 +13,14 @@ namespace GradeManager2
             List<string> StudID = new List<string>();
             List<string> First = new List<string>();
             List<string> Last = new List<string>();
+            List<decimal> Min = new List<decimal>();
+            List<decimal> Max = new List<decimal>();
+            List<decimal> average = new List<decimal>();
+            List<decimal> PerA = new List<decimal>();
+            List<decimal> PerB = new List<decimal>();
+            List<decimal> PerC = new List<decimal>();
+            List<decimal> PerD = new List<decimal>();
+            List<decimal> PerF = new List<decimal>();
 
             bool quit = false;
             bool response = false;
@@ -58,6 +66,30 @@ namespace GradeManager2
                 }
                 else if (input == "2")
                 {
+                    Console.WriteLine("The current student list is:" + "\n" + "ID:      Firstname:      Lastname:");
+                    for (int i = 0; i < StudID.Count; i++)
+                    {
+                            Console.WriteLine(StudID.ElementAt(i) + First.ElementAt(i) + Last.ElementAt(i));
+                    }
+                    Console.WriteLine("Please type the ID of the student that you wish to enter grades for");
+                    string select = Console.ReadLine();
+                    bool idfound = false;
+                    while (idfound == false)
+                    {
+                        for (int j = 0; j < StudID.Count; j++)
+                        {
+                            if (select == StudID.ElementAt(j))
+                            {
+                                idfound = true;
+                            }
+                        }
+                        if (idfound == false)
+                        {
+                            Console.WriteLine("Student not found. Please try again");
+                        }
+                    }
+                    Console.WriteLine("Please enter a grade");
+                    int grade = int.Parse(Console.ReadLine());
 
                 }
                 else if (input == "3")
