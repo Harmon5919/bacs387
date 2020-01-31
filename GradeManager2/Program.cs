@@ -75,7 +75,7 @@ namespace GradeManager2
                                 response = false;
                             }
                         }
-                    }      
+                    }
                 }
                 else if (input == "2")
                 {
@@ -97,38 +97,38 @@ namespace GradeManager2
                         {
                             if (select == StudID.ElementAt(j))
                             {
-                                idfound = true;
+                                bool rerun = true;
+                                while (rerun == true)
+                                {
+                                    idfound = true;
+                                    Console.WriteLine("Please enter a grade 0-100");
+                                    decimal grade = decimal.Parse(Console.ReadLine());
+                                    if (grade <= 100 && grade >= 0)
+                                    {
+                                        Console.WriteLine("Would you like to enter another grade?");
+                                        string graderesponse = Console.ReadLine();
+
+                                        //add grade lists
+
+                                        if (graderesponse.ToLower() == "yes")
+                                        {
+                                            rerun = true;
+                                        }
+                                        else
+                                        {
+                                            rerun = false;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Invalid grade. Please try again.");
+                                    }
+                                }
                             }
                         }
                         if (idfound == false)
                         {
                             Console.WriteLine("Student not found.");
-                        }
-                        else
-                        {
-                            bool rerun = true;
-                            while (rerun == true)
-                            {
-                                Console.WriteLine("Please enter a grade 0-100");
-                                decimal grade = decimal.Parse(Console.ReadLine());
-                                if (grade <= 100 && grade >= 0)
-                                {
-                                    
-                                }
-                                Console.WriteLine("Would you like to enter another grade?");
-                                string graderesponse = Console.ReadLine();
-
-                                //add grade lists
-
-                                if (graderesponse.ToLower() == "yes")
-                                {
-                                    rerun = true;
-                                }
-                                else
-                                {
-                                    rerun = false;
-                                }
-                            }
                         }
                     }
                 }
@@ -178,7 +178,47 @@ namespace GradeManager2
                 }
                 else if (input == "4")
                 {
-
+                    if (StudID.Count == 0)
+                    {
+                        Console.WriteLine("There are no students in the system");
+                    }
+                    else
+                    {
+                        bool idmatch = false;
+                        Console.WriteLine("The current list of students is:");
+                        for (int n = 0; n < StudID.Count; n++)
+                        {
+                            Console.WriteLine(StudID.ElementAt(n) + "\t" + First.ElementAt(n) + "\t" + Last.ElementAt(n));
+                        }
+                        while (idmatch == false)
+                        {
+                            Console.WriteLine("Please type the student ID for which you would like to analyze grades");
+                            string analyze = Console.ReadLine();
+                            for (int j = 0; j < StudID.Count; j++)
+                            {
+                                if (analyze == StudID.ElementAt(j))
+                                {
+                                    idmatch = true;
+                                    if (average.ElementAt(j) == 101)
+                                    {
+                                        Console.WriteLine("No grades have been added for this student.");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine(First.ElementAt(j) + "'s grade analysis:");
+                                        Console.WriteLine("Average: " + average.ElementAt(j) + "\n" + "Min: " + Min.ElementAt(j) + "\n" + "Max: " + Max.ElementAt(j) +
+                                            "\n" + "Percent A's: " + PerA.ElementAt(j) + "\n" + "Percent B's: " + PerB.ElementAt(j) + "\n" + "Percent C's: " + PerC.ElementAt(j)
+                                            + "\n" + "Percent D's: " + PerD.ElementAt(j) + "\n" + "Percent F's: " + PerF.ElementAt(j));
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Student not found. Please try again.");
+                                    idmatch = false;
+                                }
+                            }
+                        }
+                    }
                 }
                 else if (input == "5")
                 {
