@@ -26,6 +26,11 @@ namespace GradeManager2
             bool quit = false;
             bool response = true;
 
+            decimal avg = 0;
+            decimal minval = 100;
+            decimal maxval = 0;
+            
+
             while (quit == false)
             {
                 Console.WriteLine("Main Menu:" + "\n" + "1. Enter Student Info" + "\n" + "2. Enter Grades" + "\n" + "3. Remove Students" + "\n" + "4. Grade Analytics" + "\n" + "5. Quit");
@@ -93,6 +98,7 @@ namespace GradeManager2
                         Console.WriteLine("Please type the ID of the student that you wish to enter grades for");
                         string select = Console.ReadLine();
                         bool idfound = false;
+                        int count = 0;
                         for (int j = 0; j < StudID.Count; j++)
                         {
                             if (select == StudID.ElementAt(j))
@@ -105,19 +111,27 @@ namespace GradeManager2
                                     decimal grade = decimal.Parse(Console.ReadLine());
                                     if (grade <= 100 && grade >= 0)
                                     {
+                                        if (grade < minval)
+                                        {
+                                            minval = grade;
+                                        }
+                                        if (grade > maxval)
+                                        {
+                                            maxval = grade;
+                                        }
+                                        avg += grade;
+                                        count++;
                                         Console.WriteLine("Would you like to enter another grade?");
                                         string graderesponse = Console.ReadLine();
-
-                                        //add grade lists
-
-                                        if (graderesponse.ToLower() == "yes")
-                                        {
-                                            rerun = true;
-                                        }
-                                        else
+                                        if (graderesponse.ToLower() != "yes")
                                         {
                                             rerun = false;
+                                            avg = avg / count;
+                                            average.Insert(j, avg);
+                                            Min.Insert(j, minval);
+                                            Max.Insert(j, maxval);
                                         }
+
                                     }
                                     else
                                     {
@@ -140,38 +154,43 @@ namespace GradeManager2
                     }
                     else
                     {
-                        Console.WriteLine("The current list of students is:" + "\n" + "ID:      First:      Last:");
-                        for (int i = 0; i < StudID.Count; i++)
+                        bool again = true;
+                        while (again == true)
                         {
-                            Console.WriteLine(StudID.ElementAt(i) + First.ElementAt(i) + Last.ElementAt(i));
-                        }
-                        Console.WriteLine("Please type the ID of the student you wish to remove from the system");
-                        string remove = Console.ReadLine();
-                        bool check = false;
-                        bool again = false;
-
-                        while (check == false)
-                        {
-                            while (again == true)
+                            Console.WriteLine("The current list of students is:" + "\n" + "ID:      First:      Last:");
+                            for (int i = 0; i < StudID.Count; i++)
                             {
-                                for (int i = 0; i < StudID.Count; i++)
+                                Console.WriteLine(StudID.ElementAt(i) + First.ElementAt(i) + Last.ElementAt(i));
+                            }
+                            Console.WriteLine("Would you like to remove a student from the system?");
+                            string askremove = Console.ReadLine();
+                            if (askremove.ToLower() == "yes")
+                            {
+                                Console.WriteLine("Please type the ID of the student you wish to remove from the system");
+                                string remove = Console.ReadLine();
+                                bool check = false;
+
+                                while (check == false)
                                 {
-                                    if (remove == StudID.ElementAt(i))
+
+                                    for (int i = 0; i < StudID.Count; i++)
                                     {
-                                        StudID.RemoveAt(i); First.RemoveAt(i); Last.RemoveAt(i);
-                                        check = true;
-                                    }
-                                    else
-                                    {
-                                        Console.WriteLine("Student not found. Please try again");
+                                        if (remove == StudID.ElementAt(i))
+                                        {
+                                            StudID.RemoveAt(i); First.RemoveAt(i); Last.RemoveAt(i);
+                                            check = true;
+                                            Console.WriteLine("Student Removed.");
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Student not found. Please try again");
+                                        }
                                     }
                                 }
-                                Console.WriteLine("Would you like to remove another student?");
-                                string n = Console.ReadLine();
-                                if (n.ToLower() == "yes")
-                                {
-                                    again = true;
-                                }
+                            }
+                            else
+                            {
+                                again = false;
                             }
                         }
                     }
