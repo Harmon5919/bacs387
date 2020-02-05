@@ -93,6 +93,17 @@ namespace GradeManager2
                         Console.WriteLine("Please type the ID of the student that you wish to enter grades for");
                         string select = Console.ReadLine();
                         bool idfound = false;
+                        int count = 0;
+                        decimal avg = 0;
+                        decimal minval = 100;
+                        decimal maxval = 0;
+                        decimal Acount = 0;
+                        decimal Bcount = 0;
+                        decimal Ccount = 0;
+                        decimal Dcount = 0;
+                        decimal Fcount = 0;
+
+
                         for (int j = 0; j < StudID.Count; j++)
                         {
                             if (select == StudID.ElementAt(j))
@@ -105,19 +116,58 @@ namespace GradeManager2
                                     decimal grade = decimal.Parse(Console.ReadLine());
                                     if (grade <= 100 && grade >= 0)
                                     {
-                                        Console.WriteLine("Would you like to enter another grade?");
-                                        string graderesponse = Console.ReadLine();
-
-                                        //add grade lists
-
-                                        if (graderesponse.ToLower() == "yes")
+                                        if (grade < minval)
                                         {
-                                            rerun = true;
+                                            minval = grade;
+                                        }
+                                        if (grade > maxval)
+                                        {
+                                            maxval = grade;
+                                        }
+                                        if (grade >= 90)
+                                        {
+                                            Acount++;
+                                        }
+                                        else if (grade >= 80 && grade < 90)
+                                        {
+                                            Bcount++;
+                                        }
+                                        else if (grade >= 70 && grade < 80)
+                                        {
+                                            Ccount++;
+                                        }
+                                        else if (grade >= 60 && grade < 70)
+                                        {
+                                            Dcount++;
                                         }
                                         else
                                         {
-                                            rerun = false;
+                                            Fcount++;
                                         }
+                                        avg += grade;
+                                        count++;
+                                        Console.WriteLine("Would you like to enter another grade?");
+                                        string graderesponse = Console.ReadLine();
+                                        if (graderesponse.ToLower() != "yes")
+                                        {
+                                            rerun = false;
+                                            avg = avg / count;
+                                            average.Insert(j, avg);
+                                            Min.Insert(j, minval);
+                                            Max.Insert(j, maxval);
+                                            Acount = Acount / count;
+                                            Bcount = Bcount / count;
+                                            Ccount = Ccount / count;
+                                            Dcount = Dcount / count;
+                                            Fcount = Fcount / count;
+
+                                            PerA.Insert(j, Acount);
+                                            PerB.Insert(j, Bcount);
+                                            PerC.Insert(j, Ccount);
+                                            PerD.Insert(j, Dcount);
+                                            PerF.Insert(j, Fcount);
+                                        }
+
                                     }
                                     else
                                     {
@@ -134,44 +184,50 @@ namespace GradeManager2
                 }
                 else if (input == "3")
                 {
-                    if (StudID.Count == 0)
+                    bool again = true;
+                    while (again == true)
                     {
-                        Console.WriteLine("There are no students in the system.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("The current list of students is:" + "\n" + "ID:      First:      Last:");
-                        for (int i = 0; i < StudID.Count; i++)
+                        if (StudID.Count == 0)
                         {
-                            Console.WriteLine(StudID.ElementAt(i) + First.ElementAt(i) + Last.ElementAt(i));
+                            Console.WriteLine("There are no students in the system.");
+                            again = false;
                         }
-                        Console.WriteLine("Please type the ID of the student you wish to remove from the system");
-                        string remove = Console.ReadLine();
-                        bool check = false;
-                        bool again = false;
-
-                        while (check == false)
+                        else
                         {
-                            while (again == true)
+                            Console.WriteLine("The current list of students is:" + "\n" + "ID:      First:      Last:");
+                            for (int i = 0; i < StudID.Count; i++)
                             {
-                                for (int i = 0; i < StudID.Count; i++)
+                                Console.WriteLine(StudID.ElementAt(i) + First.ElementAt(i) + Last.ElementAt(i));
+                            }
+                            Console.WriteLine("Would you like to remove a student from the system?");
+                            string askremove = Console.ReadLine();
+                            if (askremove.ToLower() == "yes")
+                            {
+                                Console.WriteLine("Please type the ID of the student you wish to remove from the system");
+                                string remove = Console.ReadLine();
+                                bool check = false;
+
+                                while (check == false)
                                 {
-                                    if (remove == StudID.ElementAt(i))
+
+                                    for (int i = 0; i < StudID.Count; i++)
                                     {
-                                        StudID.RemoveAt(i); First.RemoveAt(i); Last.RemoveAt(i);
-                                        check = true;
+                                        if (remove == StudID.ElementAt(i))
+                                        {
+                                            StudID.RemoveAt(i); First.RemoveAt(i); Last.RemoveAt(i);
+                                            check = true;
+                                            Console.WriteLine("Student Removed.");
+                                        }
                                     }
-                                    else
+                                    if (check == false)
                                     {
                                         Console.WriteLine("Student not found. Please try again");
                                     }
                                 }
-                                Console.WriteLine("Would you like to remove another student?");
-                                string n = Console.ReadLine();
-                                if (n.ToLower() == "yes")
-                                {
-                                    again = true;
-                                }
+                            }
+                            else
+                            {
+                                again = false;
                             }
                         }
                     }
@@ -184,38 +240,34 @@ namespace GradeManager2
                     }
                     else
                     {
-                        bool idmatch = false;
                         Console.WriteLine("The current list of students is:");
                         for (int n = 0; n < StudID.Count; n++)
                         {
                             Console.WriteLine(StudID.ElementAt(n) + "\t" + First.ElementAt(n) + "\t" + Last.ElementAt(n));
                         }
-                        while (idmatch == false)
+                        Console.WriteLine("Please type the student ID for which you would like to analyze grades");
+                        string analyze = Console.ReadLine();
+                        bool idmatch = false;
+                        for (int j = 0; j < StudID.Count; j++)
                         {
-                            Console.WriteLine("Please type the student ID for which you would like to analyze grades");
-                            string analyze = Console.ReadLine();
-                            for (int j = 0; j < StudID.Count; j++)
+                            if (analyze == StudID.ElementAt(j))
                             {
-                                if (analyze == StudID.ElementAt(j))
+                                idmatch = true;
+                                if (average.ElementAt(j) == 101)
                                 {
-                                    idmatch = true;
-                                    if (average.ElementAt(j) == 101)
-                                    {
-                                        Console.WriteLine("No grades have been added for this student.");
-                                    }
-                                    else
-                                    {
-                                        Console.WriteLine(First.ElementAt(j) + "'s grade analysis:");
-                                        Console.WriteLine("Average: " + average.ElementAt(j) + "\n" + "Min: " + Min.ElementAt(j) + "\n" + "Max: " + Max.ElementAt(j) +
-                                            "\n" + "Percent A's: " + PerA.ElementAt(j) + "\n" + "Percent B's: " + PerB.ElementAt(j) + "\n" + "Percent C's: " + PerC.ElementAt(j)
-                                            + "\n" + "Percent D's: " + PerD.ElementAt(j) + "\n" + "Percent F's: " + PerF.ElementAt(j));
-                                    }
+                                    Console.WriteLine("No grades have been added for this student.");
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Student not found. Please try again.");
-                                    idmatch = false;
+                                    Console.WriteLine(First.ElementAt(j) + "'s grade analysis:");
+                                    Console.WriteLine("Average: " + average.ElementAt(j) + "\n" + "Min: " + Min.ElementAt(j) + "\n" + "Max: " + Max.ElementAt(j) +
+                                        "\n" + "Percent A's: " + PerA.ElementAt(j) + "\n" + "Percent B's: " + PerB.ElementAt(j) + "\n" + "Percent C's: " + PerC.ElementAt(j)
+                                        + "\n" + "Percent D's: " + PerD.ElementAt(j) + "\n" + "Percent F's: " + PerF.ElementAt(j));
                                 }
+                            }
+                            if (idmatch == false)
+                            {
+                                Console.WriteLine("Student not found. Please try again.");
                             }
                         }
                     }
