@@ -1,0 +1,6 @@
+C:\Users\harm0354\Documents\GitHub\bacs387\OOPExercise1\bin\Debug\OOPExercise1.exe.config
+C:\Users\harm0354\Documents\GitHub\bacs387\OOPExercise1\bin\Debug\OOPExercise1.exe
+C:\Users\harm0354\Documents\GitHub\bacs387\OOPExercise1\bin\Debug\OOPExercise1.pdb
+C:\Users\harm0354\Documents\GitHub\bacs387\OOPExercise1\obj\Debug\OOPExercise1.csprojAssemblyReference.cache
+C:\Users\harm0354\Documents\GitHub\bacs387\OOPExercise1\obj\Debug\OOPExercise1.exe
+C:\Users\harm0354\Documents\GitHub\bacs387\OOPExercise1\obj\Debug\OOPExercise1.pdb
