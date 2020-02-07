@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BACS380UDPClient", "BACS380UDPClient.csproj", "{27D0B6AE-B250-49D6-A322-03D732C104F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27D0B6AE-B250-49D6-A322-03D732C104F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D0B6AE-B250-49D6-A322-03D732C104F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D0B6AE-B250-49D6-A322-03D732C104F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D0B6AE-B250-49D6-A322-03D732C104F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB658964-AF77-4EAB-95C2-A930CF3CB767}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+C:\Users\harm0354\Documents\BACS380\BACS380UDPClient\bin\Debug\BACS380UDPClient.exe.config
+C:\Users\harm0354\Documents\BACS380\BACS380UDPClient\bin\Debug\BACS380UDPClient.exe
+C:\Users\harm0354\Documents\BACS380\BACS380UDPClient\bin\Debug\BACS380UDPClient.pdb
+C:\Users\harm0354\Documents\BACS380\BACS380UDPClient\obj\Debug\BACS380UDPClient.csprojAssemblyReference.cache
+C:\Users\harm0354\Documents\BACS380\BACS380UDPClient\obj\Debug\BACS380UDPClient.frmClient.resources
+C:\Users\harm0354\Documents\BACS380\BACS380UDPClient\obj\Debug\BACS380UDPClient.Properties.Resources.resources
+C:\Users\harm0354\Documents\BACS380\BACS380UDPClient\obj\Debug\BACS380UDPClient.csproj.GenerateResource.cache
+C:\Users\harm0354\Documents\BACS380\BACS380UDPClient\obj\Debug\BACS380UDPClient.exe
+C:\Users\harm0354\Documents\BACS380\BACS380UDPClient\obj\Debug\BACS380UDPClient.pdb
