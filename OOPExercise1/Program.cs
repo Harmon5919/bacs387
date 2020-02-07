@@ -22,7 +22,7 @@ namespace OOPExercise1
                 average += spring[i].Grade;
             }
             average = average / spring.Count;
-            Console.WriteLine("Class average is " average);
+            Console.WriteLine("Class average is " + average);
             Console.ReadKey();
         }
     }
