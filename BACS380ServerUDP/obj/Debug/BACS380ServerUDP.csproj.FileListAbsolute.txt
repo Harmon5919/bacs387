@@ -1,0 +1,9 @@
+C:\Users\harm0354\Documents\GitHub\bacs387\BACS380ServerUDP\bin\Debug\BACS380ServerUDP.exe.config
+C:\Users\harm0354\Documents\GitHub\bacs387\BACS380ServerUDP\bin\Debug\BACS380ServerUDP.exe
+C:\Users\harm0354\Documents\GitHub\bacs387\BACS380ServerUDP\bin\Debug\BACS380ServerUDP.pdb
+C:\Users\harm0354\Documents\GitHub\bacs387\BACS380ServerUDP\obj\Debug\BACS380ServerUDP.csprojAssemblyReference.cache
+C:\Users\harm0354\Documents\GitHub\bacs387\BACS380ServerUDP\obj\Debug\BACS380ServerUDP.frmServer.resources
+C:\Users\harm0354\Documents\GitHub\bacs387\BACS380ServerUDP\obj\Debug\BACS380ServerUDP.Properties.Resources.resources
+C:\Users\harm0354\Documents\GitHub\bacs387\BACS380ServerUDP\obj\Debug\BACS380ServerUDP.csproj.GenerateResource.cache
+C:\Users\harm0354\Documents\GitHub\bacs387\BACS380ServerUDP\obj\Debug\BACS380ServerUDP.exe
+C:\Users\harm0354\Documents\GitHub\bacs387\BACS380ServerUDP\obj\Debug\BACS380ServerUDP.pdb

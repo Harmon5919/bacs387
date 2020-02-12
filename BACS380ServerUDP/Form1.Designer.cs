@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMessage = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtMessage
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 43);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(537, 196);
-            this.textBox1.TabIndex = 0;
+            this.txtMessage.Location = new System.Drawing.Point(39, 43);
+            this.txtMessage.Multiline = true;
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.Size = new System.Drawing.Size(537, 196);
+            this.txtMessage.TabIndex = 0;
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(269, 288);
+            this.btnStart.Location = new System.Drawing.Point(264, 287);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // frmServer
             // 
@@ -55,7 +56,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(619, 356);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtMessage);
             this.Name = "frmServer";
             this.Text = "Server";
             this.ResumeLayout(false);
@@ -65,7 +66,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMessage;
         private System.Windows.Forms.Button btnStart;
     }
 }
