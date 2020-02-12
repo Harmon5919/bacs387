@@ -10,20 +10,20 @@ namespace OOPExercise2
     {
         static void Main(string[] args)
         {
-            Student myself = new Student("Hanna", "Harmon", 90);
-            List<Student> spring = new List<Student>();
-            spring.Add(new Student("Hannah", "Harmon", 90));
-            spring.Add(new Student("Moe", "Manshad", 100));
-            spring.Add(new Student("John", "Smith", 0));
-            decimal average = 0;
-            for (int i = 0; i < spring.Count; i++)
-            {
-                Console.WriteLine(spring[i].FirstName + " " + spring[i].LastName + " " + spring[i].Grade);
-                average += spring[i].Grade;
-            }
-            average = average / spring.Count;
-            Console.WriteLine("Class average is " + average);
+            List<Student> myList = new List<Student>();
+            myList.Add(new Student("Hanna", "Harmon", 70));
+            myList.Add(new Student("David", "Harmon", 100));
+            Course bacs387 = new Course("bacs387", 123, myList);
+            Console.WriteLine("Average: " + bacs387.GetAverageGrade());
+            Console.WriteLine("Min: " + bacs387.GetMin());
+            Console.WriteLine("Max: " + bacs387.GetMax());
+            Console.WriteLine("Percent A's: " + bacs387.GetPercent('A') + "%");
+            Console.WriteLine("Percent B's: " + bacs387.GetPercent('B') + "%");
+            Console.WriteLine("Percent C's: " + bacs387.GetPercent('C') + "%");
+            Console.WriteLine("Percent D's: " + bacs387.GetPercent('D') + "%");
+            Console.WriteLine("Percent F's: " + bacs387.GetPercent('F') + "%");
             Console.ReadKey();
         }
+
     }
 }
