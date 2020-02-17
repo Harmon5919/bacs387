@@ -15,9 +15,11 @@ namespace OOPExercise3
         }
         public string CourseName { get; set; }
         public bool Grade { get; set; }
+
+        public bool Passed()
+        {
+            return this.Grade;
     }
-    public bool Passed()
-    {
-        
     }
+
 }

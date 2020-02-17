@@ -8,16 +8,45 @@ namespace OOPExercise3
 {
     class Degree
     {
-        public Degree(bool pfCourseA, bool pfCourseB, decimal gCourseA, decimal gCourseB)
+        public Degree(PassFail pfCourseA, PassFail pfCourseB, GradedCourse gCourseA, GradedCourse gCourseB)
         {
             this.PFCourseA = pfCourseA;
             this.PFCourseB = pfCourseB;
             this.GCourseA = gCourseA;
             this.GCourseB = gCourseB;
         }
-        bool PFCourseA { get; set; }
-        bool PFCourseB { get; set; }
-        decimal GCourseA { get; set; }
-        decimal GCourseB { get; set; }
+        public PassFail PFCourseA { get; set; }
+        public PassFail PFCourseB { get; set; }
+        public GradedCourse GCourseA { get; set; }
+        public GradedCourse GCourseB { get; set; }
+        public bool Passed()
+        {
+            int count = 0;
+            if (this.GCourseA.Passed() == true)
+            {
+                count++;
+            }
+            if (this.GCourseB.Passed())
+            {
+                count++;
+            }
+            if (this.PFCourseA.Passed())
+            {
+                count++;
+            }
+            if (this.PFCourseB.Passed())
+            {
+                count++;
+            }
+            if (count >= 3)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
     }
+    }
+
 }
