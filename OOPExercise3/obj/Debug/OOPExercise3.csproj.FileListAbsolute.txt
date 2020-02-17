@@ -4,3 +4,6 @@ C:\Users\harm0354\Documents\GitHub\bacs387\OOPExercise3\bin\Debug\OOPExercise3.p
 C:\Users\harm0354\Documents\GitHub\bacs387\OOPExercise3\obj\Debug\OOPExercise3.csprojAssemblyReference.cache
 C:\Users\harm0354\Documents\GitHub\bacs387\OOPExercise3\obj\Debug\OOPExercise3.exe
 C:\Users\harm0354\Documents\GitHub\bacs387\OOPExercise3\obj\Debug\OOPExercise3.pdb
+C:\Users\hanna\Documents\UNCO\bacs387\OOPExercise3\obj\Debug\OOPExercise3.csprojAssemblyReference.cache
+C:\Users\hanna\Documents\UNCO\bacs387\OOPExercise3\obj\Debug\OOPExercise3.exe
+C:\Users\hanna\Documents\UNCO\bacs387\OOPExercise3\obj\Debug\OOPExercise3.pdb

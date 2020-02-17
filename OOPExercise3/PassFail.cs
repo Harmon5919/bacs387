@@ -18,7 +18,6 @@ namespace OOPExercise3
     }
     public bool Passed()
     {
-        bool pass = false;
-        return pass;
+        
     }
 }
