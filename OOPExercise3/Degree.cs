@@ -8,15 +8,15 @@ namespace OOPExercise3
 {
     class Degree
     {
-        public Degree(PassFail pfCourseA, PassFail pfCourseB, GradedCourse gCourseA, GradedCourse gCourseB)
+        public Degree(PassFailCourse pfCourseA, PassFailCourse pfCourseB, GradedCourse gCourseA, GradedCourse gCourseB)
         {
             this.PFCourseA = pfCourseA;
             this.PFCourseB = pfCourseB;
             this.GCourseA = gCourseA;
             this.GCourseB = gCourseB;
         }
-        public PassFail PFCourseA { get; set; }
-        public PassFail PFCourseB { get; set; }
+        public PassFailCourse PFCourseA { get; set; }
+        public PassFailCourse PFCourseB { get; set; }
         public GradedCourse GCourseA { get; set; }
         public GradedCourse GCourseB { get; set; }
         public bool Passed()

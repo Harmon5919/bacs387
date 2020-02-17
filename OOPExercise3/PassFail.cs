@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace OOPExercise3
 {
-    class PassFail
+    class PassFailCourse
     {
-        public PassFail(string courseName, bool grade)
+        public PassFailCourse(string courseName, bool grade)
         {
             this.CourseName = courseName;
             this.Grade = grade;

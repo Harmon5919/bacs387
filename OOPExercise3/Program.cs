@@ -10,8 +10,8 @@ namespace OOPExercise3
     {
         static void Main(string[] args)
         {
-            PassFail pfCourseA = new PassFail("pfCourseA", true);
-            PassFail pfCourseB = new PassFail("pfCourseB", false);
+            PassFailCourse pfCourseA = new PassFailCourse("pfCourseA", true);
+            PassFailCourse pfCourseB = new PassFailCourse("pfCourseB", false);
             GradedCourse gCourseA = new GradedCourse("gCourseA", 90);
             GradedCourse gCourseB = new GradedCourse("gCourseB", 65);
             Degree myDegree = new Degree(pfCourseA, pfCourseB, gCourseA, gCourseB);
