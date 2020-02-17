@@ -8,27 +8,17 @@ namespace OOPExercise3
 {
     class PassFail
     {
-        public PassFail(string courseName, bool pass)
+        public PassFail(string courseName, bool grade)
         {
             this.CourseName = courseName;
-            this.Pass = pass;
+            this.Grade = grade;
         }
         public string CourseName { get; set; }
-        public bool Pass { get; set; }
-        public bool Passed(bool pass)
-        {
-            foreach ()
-            {
-                if ( >= 70)
-                {
-                    pass = true;
-                }
-                else
-                {
-                    pass = false;
-                }
-            }
-            return pass;
-        }
+        public bool Grade { get; set; }
+    }
+    public bool Passed()
+    {
+        bool pass = false;
+        return pass;
     }
 }
