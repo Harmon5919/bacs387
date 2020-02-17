@@ -34,26 +34,30 @@
             // 
             // txtMessage
             // 
+            this.txtMessage.BackColor = System.Drawing.Color.White;
             this.txtMessage.Location = new System.Drawing.Point(39, 43);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
+            this.txtMessage.ReadOnly = true;
             this.txtMessage.Size = new System.Drawing.Size(537, 196);
             this.txtMessage.TabIndex = 0;
             // 
             // btnStart
             // 
+            this.btnStart.BackColor = System.Drawing.Color.Silver;
             this.btnStart.Location = new System.Drawing.Point(264, 287);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // frmServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(619, 356);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.txtMessage);

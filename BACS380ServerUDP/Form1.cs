@@ -17,11 +17,12 @@ namespace BACS380ServerUDP
         public frmServer()
         {
             InitializeComponent();
+            CheckForIllegalCrossThreadCalls = false;
         }
         private void Receiver()
         {
             UdpClient udpClient = new UdpClient(1100); //add using system.net.sockets //port must be specified on server side
-            IPEndPoint RemoteIpEndPoint = new IPEndPoint(IPAddress.Any, 0); //add using system.net
+            IPEndPoint RemoteIpEndPoint = new IPEndPoint(IPAddress.Any, 0); //add using system.net, paramaters: if computer has multi IP address, receives at all/any
             string receiveString;
             Byte[] receiveBytes = new byte[] { }; //array of bytes
 
@@ -29,6 +30,8 @@ namespace BACS380ServerUDP
             {
                 receiveBytes = udpClient.Receive(ref RemoteIpEndPoint); //waits for message, when received, assigns message to Byte container, blocking call
                 receiveString = Encoding.ASCII.GetString(receiveBytes); //converts bytes to string
+                RemoteIpEndPoint.Address.ToString(); //converts IP address to string
+                txtMessage.AppendText("From IP: " + RemoteIpEndPoint.Address.ToString() + ":     ");
                 txtMessage.AppendText(receiveString);
                 txtMessage.AppendText(Environment.NewLine); //new line
                 txtMessage.Refresh(); //refreshes form manually to show any new text
@@ -38,7 +41,7 @@ namespace BACS380ServerUDP
         private void btnStart_Click(object sender, EventArgs e)
         {
             Thread receivingThread = new Thread(Receiver);
-            receivingThread.IsBackground = true;
+            receivingThread.IsBackground = true; //keeps blocking code from being in the primary
             receivingThread.Start();
             btnStart.Enabled = false;
         }
