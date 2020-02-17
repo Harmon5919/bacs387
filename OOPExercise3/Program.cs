@@ -10,10 +10,8 @@ namespace OOPExercise3
     {
         static void Main(string[] args)
         {
-            List<Student> myList = new List<Student>();
-            myList.Add(new Student("Hanna", "Harmon", 70));
-            myList.Add(new Student("David", "Harmon", 60));
-            PassFail bacs387 = new PassFail("bacs387", , myList);
+            
+            
             Console.WriteLine(bacs387.Pass);
             Console.ReadKey();
         }
