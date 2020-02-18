@@ -15,5 +15,18 @@ namespace OOPExercise3
         }
         public string GradedName { get; set; }
         public decimal Grade { get; set; }
-    }
+
+        public bool Passed()
+        {
+            if (this.Grade >= 70)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+  }
+    
 }

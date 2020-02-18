@@ -1,0 +1,7 @@
+C:\Users\harm0354\Documents\bacs387\Abstraction1\bin\Debug\Abstraction1.exe.config
+C:\Users\harm0354\Documents\bacs387\Abstraction1\bin\Debug\Abstraction1.exe
+C:\Users\harm0354\Documents\bacs387\Abstraction1\bin\Debug\Abstraction1.pdb
+C:\Users\harm0354\Documents\bacs387\Abstraction1\obj\Debug\Abstraction1.csprojAssemblyReference.cache
+C:\Users\harm0354\Documents\bacs387\Abstraction1\obj\Debug\Abstraction1.csproj.CoreCompileInputs.cache
+C:\Users\harm0354\Documents\bacs387\Abstraction1\obj\Debug\Abstraction1.exe
+C:\Users\harm0354\Documents\bacs387\Abstraction1\obj\Debug\Abstraction1.pdb

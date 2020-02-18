@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace OOPExercise3
 {
-    class PassFail
+    class PassFailCourse
     {
-        public PassFail(string courseName, bool grade)
+        public PassFailCourse(string courseName, bool grade)
         {
             this.CourseName = courseName;
             this.Grade = grade;
         }
         public string CourseName { get; set; }
         public bool Grade { get; set; }
+
+        public bool Passed()
+        {
+            return this.Grade;
     }
-    public bool Passed()
-    {
-        
     }
+
 }
