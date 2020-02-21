@@ -31,7 +31,7 @@ namespace Abstraction1
             Console.WriteLine("Player list for the " + Bears.TeamName + " is:");
             foreach (Person x in playerList)
             {
-                Console.WriteLine(x.Name + " " + x.Age + " " + x.Position);
+                Console.WriteLine(x.Name + " Age: " + x.Age + " Position: " + x.Position);
             }
             Console.ReadKey();
         }
