@@ -1,0 +1,6 @@
+C:\Users\hanna\Documents\UNCO\bacs387\Abstraction2\bin\Debug\Abstraction2.exe.config
+C:\Users\hanna\Documents\UNCO\bacs387\Abstraction2\bin\Debug\Abstraction2.exe
+C:\Users\hanna\Documents\UNCO\bacs387\Abstraction2\bin\Debug\Abstraction2.pdb
+C:\Users\hanna\Documents\UNCO\bacs387\Abstraction2\obj\Debug\Abstraction2.csprojAssemblyReference.cache
+C:\Users\hanna\Documents\UNCO\bacs387\Abstraction2\obj\Debug\Abstraction2.exe
+C:\Users\hanna\Documents\UNCO\bacs387\Abstraction2\obj\Debug\Abstraction2.pdb
