@@ -15,6 +15,5 @@ namespace Abstraction2
         }
         public int Xlocation { get; set; }
         public int Ylocation { get; set; }
-   
     }
 }
