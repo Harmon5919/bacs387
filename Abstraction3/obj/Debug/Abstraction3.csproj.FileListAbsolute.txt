@@ -1,0 +1,6 @@
+C:\Users\harm0354\Documents\GitHub\bacs387\Abstraction3\bin\Debug\Abstraction3.exe.config
+C:\Users\harm0354\Documents\GitHub\bacs387\Abstraction3\bin\Debug\Abstraction3.exe
+C:\Users\harm0354\Documents\GitHub\bacs387\Abstraction3\bin\Debug\Abstraction3.pdb
+C:\Users\harm0354\Documents\GitHub\bacs387\Abstraction3\obj\Debug\Abstraction3.csprojAssemblyReference.cache
+C:\Users\harm0354\Documents\GitHub\bacs387\Abstraction3\obj\Debug\Abstraction3.exe
+C:\Users\harm0354\Documents\GitHub\bacs387\Abstraction3\obj\Debug\Abstraction3.pdb
