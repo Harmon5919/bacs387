@@ -8,10 +8,12 @@ namespace Abstraction2
 {
     class Person
     {
-        public Person(Location xy)
+        public Person(int id, Location xy)
         {
+            this.ID = id;
             this.XY = xy;
         }
+        public int ID { get; set; }
         public Location XY { get; set; }
     }
 }
