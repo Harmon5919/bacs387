@@ -15,6 +15,7 @@ namespace Abstraction3
             memberList[0].CheckBalance();
             memberList[0].AddFunds();
             memberList[0].CheckBalance();
+            memberList[0].CloseAccount();
             Console.ReadKey();
         }
     }

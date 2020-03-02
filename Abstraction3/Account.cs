@@ -24,7 +24,11 @@ namespace Abstraction3
             if (this.Open == false)
             {
                 this.AcctType = "Closed";
-                Console.WriteLine("This account has been closed");
+                Console.WriteLine(this.Name + "'s account has been closed");
+            }
+            if (this.Open == true)
+            {
+                Console.WriteLine(this.Name + "'s " + this.AcctType + " account is active");
             }
         }
         public void AddFunds()
