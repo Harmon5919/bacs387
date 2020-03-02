@@ -8,14 +8,22 @@ namespace Abstraction3
 {
     class BankBalance
     {
-        public BankBalance(List<Account> customerCount, double totalBal, int transactionNum)
+        public BankBalance(List<Account> customers, double totalBal, int transactionNum)
         {
-            this.CustomerCount = customerCount;
+            this.Customers = customers;
             this.TotalBal = totalBal;
-            this.TransactionNumb = transactionNum;
+            this.TransactionNum = transactionNum;
         }
-        public List<Account> CustomerCount { get; set; }
-        public double TotalBal { get; set; }
-        public int TransactionNumb { get; set; }
+        public List<Account> Customers { get; set; }
+        private double TotalBal { get; set; }
+        public int TransactionNum { get; set; }
+        public void ListAllMembers()
+        {
+            Console.WriteLine("List of Accounts:");
+            for (int count = 0; count < this.Customers.Count; count++)
+            {
+                Console.WriteLine(this.Customers[count].Name + " " + this.Customers[count].AcctType);
+            }
+        }
     }
 }
