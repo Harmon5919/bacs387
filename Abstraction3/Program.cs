@@ -18,7 +18,6 @@ namespace Abstraction3
 
             BankBalance myBank = new BankBalance(bankAccounts, 0, 0);
             
-
             
             Console.WriteLine(hannaChecking.Name + "'s " + hannaChecking.AcctType + " account has a balance of " + hannaChecking.CheckBalance());
             Console.WriteLine(hannaChecking.Name + "'s " + hannaChecking.AcctType + " account has a balance of " + hannaChecking.AddFunds(17));
@@ -29,6 +28,13 @@ namespace Abstraction3
             Console.WriteLine(hannaSavings.Name + "'s " + hannaSavings.AcctType + " account has a balance of " + hannaSavings.AddFunds(-10));
             Console.WriteLine(hannaSavings.Name + "'s " + hannaSavings.AcctType + " account has had " + hannaSavings.TransactionCount + " transaction(s)");
             hannaSavings.CloseAccount();
+
+            myBank.ListAllMembers();
+            Console.WriteLine("This bank has: " + "\n" + "$" +
+                    myBank.GetBankTotal() + "\n" +
+                    myBank.GetAcctTypeCount("checking") + " checking accounts" + "\n" + 
+                    myBank.GetAcctTypeCount("saving") + " savings accounts" + "\n" + 
+                    myBank.GetTransactionCount() + " total transactions");
             Console.ReadKey();
         }
     }
