@@ -16,7 +16,7 @@ namespace Abstraction3
         }
         public List<Account> Customers { get; set; }
         private double TotalBal { get; set; }
-        public int TransactionNum { get; set; }
+        private int TransactionNum { get; set; }
         public double GetBankTotal()
         {
             double totalBal = 0;

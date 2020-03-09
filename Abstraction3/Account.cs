@@ -18,7 +18,7 @@ namespace Abstraction3
         }
         public string Name { get; set; }
         public string AcctType { get; set; }
-        public int TransactionCount { get; set; }
+        private int TransactionCount { get; set; }
         private double AcctBal { get; set; }
         private bool Open { get; set; }
         public void CloseAccount()
