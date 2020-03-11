@@ -10,6 +10,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            B myObject = new B("Hanna", "Checking");
+            Console.WriteLine(myObject.Name + myObject.Account);
+            Console.ReadKey();
         }
     }
 }
