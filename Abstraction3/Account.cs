@@ -8,10 +8,9 @@ namespace Abstraction3
 {
     class Account
     {
-        public Account(string name, string acctType, int transactionCount, double acctBal, bool open)
+        public Account(string name, int transactionCount, double acctBal, bool open)
         {
             this.Name = name;
-            this.AcctType = acctType;
             this.TransactionCount = transactionCount;
             this.AcctBal = acctBal;
             this.Open = open;
@@ -23,14 +22,7 @@ namespace Abstraction3
         private bool Open { get; set; }
         public void CloseAccount()
         {
-            if (this.Open == false)
-            {
-                Console.WriteLine(this.Name + "'s " + this.AcctType + " account has been closed");
-            }
-            if (this.Open == true)
-            {
-                Console.WriteLine(this.Name + "'s " + this.AcctType + " account is active");
-            }
+            this.Open = false;
         }
         public double AddFunds(double increase)
         {
@@ -49,6 +41,10 @@ namespace Abstraction3
         {
             int acctTransactions = this.TransactionCount;
             return acctTransactions;
+        }
+        public void PrintBalance()
+        {
+            Console.WriteLine("The account balance is " + this.AcctBal);
         }
     }
 }
