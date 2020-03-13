@@ -19,13 +19,11 @@ namespace Abstraction3
         private int TransactionNum { get; set; }
         public double GetBankTotal()
         {
-            double totalBal = 0;
             for (int count = 0; count < this.Customers.Count; count++)
             {
                 this.TotalBal += Customers[count].CheckBalance();
-                totalBal = this.TotalBal;
             }
-            return totalBal;
+            return this.TotalBal;
         }
         public void ListAllMembers()
         {
@@ -42,7 +40,7 @@ namespace Abstraction3
             int requestedCount = 0;
             for (int i = 0; i < this.Customers.Count; i++)
             {
-                if (this.Customers[i].AcctType == "Checking")
+                if (this.Customers[i].AcctType == "checking")
                 {
                     checkingCount++;
                 }

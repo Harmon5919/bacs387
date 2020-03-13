@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace Abstraction3
 {
-    class SavingsAccount: Account
+    class SavingsAccount : Account
     {
-        public SavingsAccount(string name, int transactionCount, int acctBal, bool open, double interestRate): base(name, transactionCount, acctBal, open)
+        public SavingsAccount(string name, int transactionCount, string acctType, int acctBal, bool open, double interestRate) : base(name, transactionCount, acctType, acctBal, open)
         {
             this.InterestRate = interestRate;
         }
         public double InterestRate { get; set; }
+        public double GetInterestRate()
+        {
+            return this.InterestRate;
+        }
     }
 }

@@ -10,8 +10,8 @@ namespace Abstraction3
     {
         static void Main(string[] args)
         {
-            Account hannaChecking = new CheckingAccount("Hanna", 0, 1000, true);
-            Account hannaSavings = new SavingsAccount("Hanna", 0, 2000, false, .07);
+            CheckingAccount hannaChecking = new CheckingAccount("Hanna", 0, "checking", 1000, true);
+            SavingsAccount hannaSavings = new SavingsAccount("Hanna", 0, "savings", 2000, false, .07);
             List<Account> bankAccounts = new List<Account>();
             bankAccounts.Add(hannaChecking);
             bankAccounts.Add(hannaSavings);
@@ -31,10 +31,10 @@ namespace Abstraction3
 
             myBank.ListAllMembers();
             Console.WriteLine("This bank has: " + "\n" + "$" +
-                    myBank.GetBankTotal() + "\n" +
-                    myBank.GetAcctTypeCount("checking") + " checking accounts" + "\n" + 
-                    myBank.GetAcctTypeCount("saving") + " savings accounts" + "\n" + 
-                    myBank.GetTransactionCount() + " total transactions");
+            myBank.GetBankTotal() + "\n" +
+            myBank.GetAcctTypeCount("checking") + " checking accounts" + "\n" + 
+            myBank.GetAcctTypeCount("saving") + " savings accounts" + "\n" + 
+            myBank.GetTransactionCount() + " total transactions");
             Console.ReadKey();
         }
     }

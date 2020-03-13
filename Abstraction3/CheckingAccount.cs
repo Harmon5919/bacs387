@@ -8,13 +8,9 @@ namespace Abstraction3
 {
     class CheckingAccount: Account
     {
-        public CheckingAccount(string name, int transactionCount, int acctBal, bool open): base(name, transactionCount, acctBal, open)
+        public CheckingAccount(string name, int transactionCount, string acctType, int acctBal, bool open) : base(name, transactionCount, acctType, acctBal, open)
         {
 
-        }
-        public void GetStatus()
-        {
-            
         }
     }
 }
