@@ -1,0 +1,6 @@
+C:\Users\hanna\Documents\UNCO\bacs387\ExtraCreditProject\bin\Debug\ExtraCreditProject.exe.config
+C:\Users\hanna\Documents\UNCO\bacs387\ExtraCreditProject\bin\Debug\ExtraCreditProject.exe
+C:\Users\hanna\Documents\UNCO\bacs387\ExtraCreditProject\bin\Debug\ExtraCreditProject.pdb
+C:\Users\hanna\Documents\UNCO\bacs387\ExtraCreditProject\obj\Debug\ExtraCreditProject.csprojAssemblyReference.cache
+C:\Users\hanna\Documents\UNCO\bacs387\ExtraCreditProject\obj\Debug\ExtraCreditProject.exe
+C:\Users\hanna\Documents\UNCO\bacs387\ExtraCreditProject\obj\Debug\ExtraCreditProject.pdb
