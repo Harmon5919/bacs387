@@ -18,38 +18,46 @@ namespace Abstraction2
   
         public bool GetScore()
         {
-            bool Score = false;
-            List<Location> teamOneBasket = new List<Location>();
-            teamOneBasket.Add(new Location(-1, -5));
-            teamOneBasket.Add(new Location(0, -5));
-            teamOneBasket.Add(new Location(1, -5));
-            teamOneBasket.Add(new Location(-1, -4));
-            teamOneBasket.Add(new Location(0, -4));
-            teamOneBasket.Add(new Location(1, -4));
-            List<Location> teamTwoBasket = new List<Location>();
-            teamTwoBasket.Add(new Location(-1, 5));
-            teamTwoBasket.Add(new Location(0, 5));
-            teamTwoBasket.Add(new Location(1, 5));
-            teamTwoBasket.Add(new Location(-1, 4));
-            teamTwoBasket.Add(new Location(0, 4));
-            teamTwoBasket.Add(new Location(1, 4));
+            bool score = false;
+            List<Location> teamOneGoal = new List<Location>();
+            teamOneGoal.Add(new Location(-1, -5));
+            teamOneGoal.Add(new Location(0, -5));
+            teamOneGoal.Add(new Location(1, -5));
+            teamOneGoal.Add(new Location(-1, -4));
+            teamOneGoal.Add(new Location(0, -4));
+            teamOneGoal.Add(new Location(1, -4));
+            List<Location> teamTwoGoal = new List<Location>();
+            teamTwoGoal.Add(new Location(-1, 5));
+            teamTwoGoal.Add(new Location(0, 5));
+            teamTwoGoal.Add(new Location(1, 5));
+            teamTwoGoal.Add(new Location(-1, 4));
+            teamTwoGoal.Add(new Location(0, 4));
+            teamTwoGoal.Add(new Location(1, 4));
 
-            foreach (Location n in teamOneBasket)
+            foreach (Location n in teamOneGoal)
             {
                 
                 if (this.Ball.Xlocation == n.Xlocation && this.Ball.Ylocation == n.Ylocation)
                 {
-                    Score = true;
+                    score = true;
                 }
             }
-            foreach (Location x in teamTwoBasket)
+            foreach (Location x in teamTwoGoal)
             {
                 if (this.Ball.Xlocation == x.Xlocation && this.Ball.Ylocation == x.Ylocation)
                 {
-                    Score = true;
+                    score = true;
                 }
             }
-            return Score;
+            if (score == false)
+            {
+                Console.WriteLine("A goal has not been scored");
+            }
+            else
+            {
+                Console.WriteLine("A goal has been scored");
+            }
+            return score;
         }
     }
 }

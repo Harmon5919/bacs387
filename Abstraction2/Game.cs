@@ -8,28 +8,30 @@ namespace Abstraction2
 {
     class Game
     {
-        public Game(List<Person> team1, List<Person> team2, Court thisCourt)
+        public Game(string gameType, List<Player> team1, List<Player> team2, Court thisCourt)
         {
+            this.GameType = gameType;
             this.Team1 = team1;
             this.Team2 = team2;
             this.ThisCourt = thisCourt;
         }
-        public List<Person> Team1 { get; set; }
-        public List<Person> Team2 { get; set; }
+        public string GameType { get; set; }
+        public List<Player> Team1 { get; set; }
+        public List<Player> Team2 { get; set; }
         public Court ThisCourt { get; set; }
 
         public void GetPlayerList()
         {
             Console.WriteLine("Team One:");
-            foreach (Person n in Team1)
+            foreach (Player n in Team1)
             {
-                Console.WriteLine("Player " + n.ID + ": (" + n.XY.Xlocation + "," + n.XY.Ylocation + ")");
+                Console.WriteLine("Player " + n.ID + ": " + n.Position + " (" + n.XY.Xlocation + "," + n.XY.Ylocation + ")");
             }
             Console.WriteLine("Team Two:");
 
-            foreach (Person n in Team2)
+            foreach (Player n in Team2)
             {
-                Console.WriteLine("Player " + n.ID + ": (" + n.XY.Xlocation + "," + n.XY.Ylocation + ")");
+                Console.WriteLine("Player " + n.ID + ": " + n.Position + " (" + n.XY.Xlocation + ", " + n.XY.Ylocation + ")");
             }
         }
 
