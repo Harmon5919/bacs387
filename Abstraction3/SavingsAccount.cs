@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Abstraction3
 {
-    class SavingsAccount : Account
+    class SavingsAccount: Account
     {
         public SavingsAccount(string name, int transactionCount, string acctType, int acctBal, bool open, double interestRate) : base(name, transactionCount, acctType, acctBal, open)
         {

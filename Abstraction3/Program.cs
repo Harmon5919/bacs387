@@ -11,23 +11,25 @@ namespace Abstraction3
         static void Main(string[] args)
         {
             CheckingAccount hannaChecking = new CheckingAccount("Hanna", 0, "checking", 1000, true);
-            SavingsAccount hannaSavings = new SavingsAccount("Hanna", 0, "savings", 2000, false, .07);
+            SavingsAccount hannaSavings = new SavingsAccount("Hanna", 0, "savings", 2000, true, .07);
             List<Account> bankAccounts = new List<Account>();
             bankAccounts.Add(hannaChecking);
             bankAccounts.Add(hannaSavings);
 
             BankBalance myBank = new BankBalance(bankAccounts, 0, 0);
-            
-            
+
+
             Console.WriteLine(hannaChecking.Name + "'s checking account has a balance of " + hannaChecking.CheckBalance());
-            Console.WriteLine(hannaChecking.Name + "'s checking account has a balance of " + hannaChecking.AddFunds(17));
-            Console.WriteLine(hannaChecking.Name + "'s checking account has had " + hannaChecking.GetTransactionCount() + " transaction(s)");
+            hannaChecking.AddFunds(17);
+            hannaChecking.PrintBalance();
+            hannaChecking.GetTransactionCount();
             hannaChecking.CloseAccount();
 
             Console.WriteLine(hannaSavings.Name + "'s savings account has a balance of " + hannaSavings.CheckBalance());
-            Console.WriteLine(hannaSavings.Name + "'s savings account has a balance of " + hannaSavings.AddFunds(-10));
-            Console.WriteLine(hannaSavings.Name + "'s savings account has had " + hannaSavings.GetTransactionCount() + " transaction(s)");
+            hannaSavings.AddFunds(-10);
+            hannaSavings.PrintBalance();
             hannaSavings.CloseAccount();
+            hannaSavings.GetTransactionCount();
 
             myBank.ListAllMembers();
             Console.WriteLine("This bank has: " + "\n" + "$" +

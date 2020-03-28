@@ -64,7 +64,7 @@ namespace Abstraction3
             int transactionCount = 0;
             for (int i = 0; i < Customers.Count; i++)
             {
-                transactionCount += Customers[1].GetTransactionCount();
+                transactionCount += Customers[i].GetTransactionCount();
             }
             return transactionCount;
         }

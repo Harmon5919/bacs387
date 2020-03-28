@@ -24,27 +24,30 @@ namespace Abstraction3
         public void CloseAccount()
         {
             this.Open = false;
+            Console.WriteLine(this.Name + "'s " + this.AcctType + " is closed.");
+            this.TransactionCount++;
         }
         public double AddFunds(double increase)
         {
             this.AcctBal += increase;
+            Console.WriteLine(this.Name + "'s " + this.AcctType + " balance has changed by " + increase);
             this.TransactionCount++;
             return this.AcctBal;
         }
         public double CheckBalance()
         {
-            double balance = this.AcctBal;
             this.TransactionCount++;
-            return balance;
+            return this.AcctBal;
         }
         public int GetTransactionCount()
         {
-            int acctTransactions = this.TransactionCount;
-            return acctTransactions;
+            Console.WriteLine(this.Name + "'s " + this.AcctType + " has had " + this.TransactionCount + " transactions.");
+            return this.TransactionCount;
         }
         public void PrintBalance()
         {
-            Console.WriteLine("The account balance is " + this.AcctBal);
+            Console.WriteLine(this.Name + "'s " + this.AcctType + " balance is " + this.AcctBal);
+            this.TransactionCount++;
         }
     }
 }
