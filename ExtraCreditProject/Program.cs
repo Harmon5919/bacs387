@@ -22,7 +22,7 @@ namespace ExtraCreditProject
 
 
                 Console.WriteLine("Main Menu: " + "\n" + "1. Add/Edit Students"
-                    + "\n" + "2. Add/Edit Courses" + "\n" + "3. Quit");
+                    + "\n" + "2. Add/Edit Courses" + "\n" + "3. Grade Analytics" + "\n" + "4. Quit");
                 string input = Console.ReadLine();
                 if (input == "1")
                 {
@@ -215,11 +215,11 @@ namespace ExtraCreditProject
 
                                         for (int n = 0; n < studentList.Count; n++)
                                         {
-                                            
+
                                             if (newstudent == studentList[n].StudentID)
                                             {
                                                 courseList[i].StudentsInClass.Add(studentList[n]);
-                                                Console.WriteLine(studentList[n].FullName.First + studentList[n].FullName.Last 
+                                                Console.WriteLine(studentList[n].FullName.First + studentList[n].FullName.Last
                                                     + " has been added to " + courseList[i].CourseName);
                                                 idmatch = true;
                                             }
@@ -243,6 +243,30 @@ namespace ExtraCreditProject
                     }
                 }
                 else if (input == "3")
+                {
+                    Console.WriteLine("Current course list:");
+                    for (int i = 0; i < courseList.Count; i++)
+                    {
+                        Console.WriteLine(courseList[i].CourseID + " " + courseList[i].CourseName);
+                    }
+                    Console.WriteLine("Please enter the course ID for the course you would like to analyze");
+                    int courseselect = int.Parse(Console.ReadLine());
+                    for (int i = 0; i < courseList.Count; i++)
+                    {
+                        if (courseselect == courseList[i].CourseID)
+                        {
+                            Console.WriteLine("List of Students and Their Average Grade:");
+                            for (int j = 0; j < courseList[i].StudentsInClass.Count; j++)
+                            {
+                                decimal individualavg = courseList[i].StudentsInClass[j].GetStudentAverage();
+                                Console.WriteLine(courseList[i].StudentsInClass[j].FullName + ": " + individualavg);
+                                courseList[i].GetCourseMin(individualavg);
+                                
+                            }
+                        }
+                    }
+                }
+                else if (input == "4")
                 {
                     Console.WriteLine("Thank you. Goodbye.");
                     continueprogram = false;

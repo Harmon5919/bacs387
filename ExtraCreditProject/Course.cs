@@ -26,6 +26,19 @@ namespace ExtraCreditProject
             Course newcourse = new Course(courseName, courseID, this.StudentsInClass);
 
         }
+        public decimal GetCourseMin(decimal indavg)
+        {
+            decimal min = 100;
+            for (int i = 0; i < this.StudentsInClass[i].Grade.Count; i++)
+            {
+                if (min > indavg)
+                {
+                    min = indavg;
+                }
+            }
+
+            return min;
+        }
     }
     
 }

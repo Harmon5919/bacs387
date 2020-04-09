@@ -22,5 +22,15 @@ namespace ExtraCreditProject
             Console.WriteLine("Add a Student: " + "\n" + "Type the first name of the new student");
             
         }
+        public decimal GetStudentAverage()
+        {
+            decimal avg = 0;
+            for (int i = 0; i < Grade.Count; i++)
+            {
+                avg += Grade[i];
+            }
+            avg = avg / Grade.Count;
+            return avg;
+        }
     }
 }
